@@ -22,7 +22,7 @@ public class RaidInstance {
     private final List<UUID> spawnedMobs = new ArrayList<>();
     private int waveNumber = 0;
     private int waveTimer = 0;
-    private int raidStartTime = 0;
+    private long raidStartTime = 0;
     private boolean finished = false;
     private BlockPos targetPosition;
     private final Set<BlockPos> brokenBlocks = new HashSet<>();
