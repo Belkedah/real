@@ -104,8 +104,8 @@ public class RaidMobHandler {
 
     private static void setupRaidMobAI(Mob mob, BlockPos targetPos) {
         // Clear default goals and add custom raid behavior
-        mob.goalSelector.removeAllGoals();
-        mob.targetSelector.removeAllGoals();
+        mob.goalSelector.removeAllGoals(goal -> true);
+        mob.targetSelector.removeAllGoals(goal -> true);
         
         // Add attack player goal
         mob.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(mob, Player.class, true));
