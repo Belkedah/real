@@ -1,3 +1,10 @@
-rootProject.name = 'raidmod'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.minecraftforge.net' }
+    }
+}
+
+
 
 
