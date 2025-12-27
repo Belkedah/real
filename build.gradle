@@ -1,7 +1,7 @@
 plugins {
     id 'eclipse'
     id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'net.minecraftforge.gradle' version '6.0.+'
 }
 
 version = '1.0.0'
@@ -85,5 +85,6 @@ tasks.register('sourcesJar', Jar) {
 artifacts {
     archives sourcesJar
 }
+
 
 
